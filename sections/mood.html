@@ -1,0 +1,50 @@
+<section id="mood-section" class="py-20 px-4 md:px-10 text-center">
+  <h4 class="font-delius text-lg md:text-2xl font-bold text-red-700 mb-5">Aku Mau Tau..</h4>
+  <h2 class="font-daysone text-3xl md:text-5xl font-bold">LAGI GIMANA <span class="text-red-700">MOOD KAMU PAS LIAT PORTO INI?</span></h2>
+  <p class="font-manrope text-lg sm:text-xl text-gray-600 mt-6 mb-12 font-manrope">Gak usah bingung, tinggal klik emoji sesuai hati, langsung cuss!</p>
+
+  <div class="max-w-8xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-0 rounded-3xl overflow-hidden">
+      <!-- Card 1: Pojok kiri atas -->
+      <div class="bg-white flex items-center gap-8 py-4 md:py-8 px-4 min-h-[80px] md:min-h-[200px] cursor-pointer transition hover:scale-105 group rounded-tl-3xl md:rounded-tl-3xl border-b border-r md:border-r border-gray-200" data-mood="marah">
+        <img src="assets/Faces.svg" alt="marah" class="w-14 h-14 md:w-24 md:h-24 pl-2 md:pl-4 transition-transform duration-300 group-hover:scale-125 group-hover:rotate-12" />
+        <p class="text-left font-semibold text-base md:text-2xl">Gak suka deh!</p>
+      </div>
+      <!-- Card 2: Pojok kanan atas -->
+      <div class="bg-white flex items-center gap-8 py-4 md:py-8 px-4 min-h-[80px] md:min-h-[200px] cursor-pointer transition hover:scale-105 group rounded-tr-3xl md:rounded-tr-3xl border-b border-gray-200" data-mood="santai">
+        <img src="assets/Faces(2).svg" alt="santai" class="w-14 h-14 md:w-24 md:h-24 pl-2 md:pl-4 transition-transform duration-300 group-hover:scale-125 group-hover:rotate-12" />
+        <p class="text-left font-semibold text-base md:text-2xl">OK Lah...</p>
+      </div>
+      <!-- Card 3: Tengah kiri -->
+      <div class="bg-white flex items-center gap-8 py-4 md:py-8 px-4 min-h-[80px] md:min-h-[200px] cursor-pointer transition hover:scale-105 group border-b border-r md:border-r border-gray-200" data-mood="tugas">
+        <img src="assets/Faces(3).svg" alt="tugas" class="w-14 h-14 md:w-24 md:h-24 pl-2 md:pl-4 transition-transform duration-300 group-hover:scale-125 group-hover:rotate-12" />
+        <p class="text-left font-semibold text-base md:text-2xl">Ini bisa joki?</p>
+      </div>
+      <!-- Card 4: Tengah kanan -->
+      <div class="bg-white flex items-center gap-8 py-4 md:py-8 px-4 min-h-[80px] md:min-h-[200px] cursor-pointer transition hover:scale-105 group border-b border-gray-200" data-mood="mikir">
+        <img src="assets/Faces(4).svg" alt="mikir" class="w-14 h-14 md:w-24 md:h-24 pl-2 md:pl-4 transition-transform duration-300 group-hover:scale-125 group-hover:rotate-12" />
+        <p class="text-left font-semibold text-base md:text-2xl">OK sih.. cuma-</p>
+      </div>
+      <!-- Card 5: Bawah kiri -->
+      <div class="bg-white flex items-center gap-8 py-4 md:py-8 px-4 min-h-[80px] md:min-h-[200px] cursor-pointer transition hover:scale-105 group rounded-bl-3xl md:rounded-bl-3xl border-r md:border-r border-gray-200" data-mood="senang">
+        <img src="assets/Faces(5).svg" alt="senang" class="w-14 h-14 md:w-24 md:h-24 pl-2 md:pl-4 transition-transform duration-300 group-hover:scale-125 group-hover:rotate-12" />
+        <p class="text-left font-semibold text-base md:text-2xl">WIHH CAKEP AMATT, mau connect dong!</p>
+      </div>
+      <!-- Card 6: Bawah kanan -->
+      <div class="bg-white flex items-center gap-8 py-4 md:py-8 px-4 min-h-[80px] md:min-h-[200px] cursor-pointer transition hover:scale-105 group rounded-br-3xl md:rounded-br-3xl" data-mood="sakit">
+        <img src="assets/Faces(6).svg" alt="sakit" class="w-14 h-14 md:w-24 md:h-24 pl-2 md:pl-4 transition-transform duration-300 group-hover:scale-125 group-hover:rotate-12" />
+        <p class="text-left font-semibold text-base md:text-2xl">Bisa konsultasi gak ya?</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Modal Section -->
+<div id="mood-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 hidden">
+  <div class="bg-white rounded-2xl p-6 max-w-xl w-[90%] relative shadow-xl overflow-hidden">
+    <button id="mood-modal-close" class="absolute top-4 right-5 text-2xl font-bold text-gray-600">&times;</button>
+    <p id="mood-desc" class="text-gray-800 text-lg mb-3 font-manrope"></p>
+    <h4 id="mood-menu" class="text-red-600 font-extrabold  text-xl mb-6 font-delius"></h4>
+    <a id="mood-wa-link" href="#" target="_blank" class="inline-block bg-red-600 text-white font-semibold py-3 px-6 rounded-full text-sm hover:bg-red-700">Chat Ana</a>
+    <img id="mood-emoji" src="" alt="Emoji" class="absolute bottom-[-10px] right-[-10px] w-24 h-24 md:w-28 md:h-28 rotate-[10deg]" />
+  </div>
+</div>

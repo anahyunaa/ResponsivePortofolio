@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+html {
+scroll-behavior: smooth;
+}
+body {
+  background-color: #fdefef;
+}
+.font-mansalva {
+  font-family: 'Mansalva', cursive;
+}
+.font-daysone {
+  font-family: 'Days One', sans-serif;
+}
+.font-comic {
+  font-family: 'Comic Sans', cursive;
+}
+.font-manrope {
+  font-family: 'Manrope', sans-serif;
+}
+.font-delius {
+  font-family: 'Delius', cursive !important;
+}
+.menu-card {
+  transition: all 0.5s ease;
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+}
+p {
+  font-family: 'Manrope', sans-serif !important;
+}
+
+/* Animasi marquee horizontal looping */
+.marquee-container {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+.marquee-red {
+  z-index: 50;
+  animation: marquee-left 10s linear infinite;
+}
+.marquee-white {
+  z-index: 40;
+  animation: marquee-right 24s linear infinite;
+}
+@keyframes marquee-left {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(-150%); }
+}
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+/* Animasi marquee hanya pada isi banner */
+.marquee-inner {
+  display: flex;
+  width: 200%;
+}
+.marquee-red-inner {
+  animation: marquee-red-move 130s linear infinite;
+}
+.marquee-white-inner {
+  animation: marquee-white-move 58s linear infinite reverse;
+}
+@keyframes marquee-red-move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes marquee-white-move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@supports not ((-webkit-backdrop-filter: blur(8px)) or (backdrop-filter: blur(8px))) {
+  .backdrop-blur, .backdrop-blur-md {
+    background-color: rgba(255,255,255,0.95) !important;
+  }
+}
+
+/* baru */
